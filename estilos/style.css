@@ -156,7 +156,7 @@ justify-content: center;
 }
 */
 /* MOBILE */
-
+/*
 body{
     background-color: rgb(162, 211, 211);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -267,9 +267,9 @@ footer{
     }
 
 }
-
+*/
 /* BEBIDAS MOBILE */
-
+/*
 .header2{
     grid-area: header2;
 }
@@ -347,6 +347,41 @@ footer{
     transition-property: all;
     transition-duration: 1s;
 }
+*/
+
+.color-nav{
+    background-color: aqua;
+}
+
+main{
+    background-color: blanchedalmond;
+    min-height: 100vh;
+}
+
+.medio{
+    height: 52cm;
+}
+
+.img-index{
+    margin-left: 10px;
+    margin-top: 15px;
+    border: 3px solid black;
+    width: 350px;
+    height: 400px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(170, 230, 169);
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    height: 5cm;
+
+
+    
+}
+
+
 
 
 
