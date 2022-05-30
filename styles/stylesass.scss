@@ -1,0 +1,445 @@
+@import "servicio";
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /*
+  main{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+  }
+  
+  header{
+      background-color: rgb(162, 211, 211);
+      font-size: large;
+      height: 2.5cm;
+      border: 3px solid black;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: black;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+  }
+  
+  ul li{
+      list-style-type: none;
+      display: inline-block;
+      padding: 35px;
+  
+  }
+  
+  nav ul li a{
+      text-decoration: none;
+      color: black;
+     
+  }
+  
+  #subtitulo{
+      color: blue;
+  }
+  
+  main{
+      background-color: rgb(220, 202, 181);
+      border: 3px solid black;
+      
+  }
+  
+  img{
+      margin-left: 10px;
+      margin-top: 15px;
+      border: 3px solid black;
+      width: 350px;
+      height: 400px;
+  }
+  figcaption{
+      color: black;
+      margin-left: 10px;
+  }
+  
+  section{
+      background-color: rgb(220, 202, 181);
+  }
+  
+  article{
+      height: 100vh;
+  }
+  
+  #servicios{
+      height: 100vh;
+  }
+  
+  #fotos{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  footer{
+      background-color: rgb(162, 211, 211);
+      border: 3px solid black;
+      margin-bottom: 0%;
+      padding-bottom: 0%;
+      height: 2.5cm;
+      
+  
+  }
+  */
+  /* GRIDS */
+  /*
+  .grilla{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 15fr 1fr;
+      grid-template-areas: 
+      "header header header header"
+      "main main main main"
+      "footer footer footer footer"
+      ;
+  }
+  
+  .header{
+      grid-area: header;
+  }
+  
+  .medio{
+      grid-area: main;
+  }
+  
+  .footer{
+      grid-area: footer;
+  }
+  
+  .fotos2{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  height: 1400px;
+  justify-content: center;
+  
+  }
+  */
+  /* BEBIDAS */
+  /*
+  .grilla2{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 18fr 1fr;
+      grid-template-areas:
+      "header2 header2 header2 header2"
+      "main2 main2 main2 main2"
+      "footer2 footer2 footer2 footer2"
+      ;
+  }
+  
+  .header2{
+      grid-area: header2;
+  }
+  
+  .medio2{
+      grid-area: main2;
+  }
+  
+  .footer2{
+      grid-area: footer2;
+  }
+  
+  .fotosbebidas2{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      height: 1700px;
+      justify-content: end;
+      align-items: end;
+      gap: 100px;
+      
+      
+  }
+  */
+  /* MOBILE */
+  /*
+  body{
+      background-color: rgb(162, 211, 211);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+  }
+  
+  header{
+      font-size: large;
+      background-color: rgb(220, 202, 181);
+      justify-content: center;
+      display: grid;
+      border: 3px solid black;
+  }
+  
+  
+  nav ul li a{
+      text-decoration: none;
+      color: rgb(4, 3, 3);
+  }
+  
+  ul li{
+      list-style-type: none;
+      display: inline-block;
+      padding: 35px;
+  
+  }
+  
+  img{
+      margin-left: 10px;
+      margin-top: 15px;
+      border: 3px solid black;
+      width: 350px;
+      height: 400px;
+  }
+  
+  figcaption{
+      color: black;
+      margin-left: 10px;
+  }
+  
+  footer{
+      text-align: center;
+      padding: 1em;
+      background-color: rgb(220, 202, 181);
+      margin-bottom: 0;
+      margin-top: auto;
+      border: 3px solid black;
+  }
+  
+  .header{
+      grid-area: header;
+  }
+  
+  .medio{
+      grid-area: main;
+  }
+  
+  .footer{
+      grid-area: footer;
+  }
+  
+  .fotos2{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      height: 2100px;
+      gap: 15px;
+      align-items: end;
+      
+      
+  }
+  
+  .grilla{
+      display: grid;
+      gap: 20px;
+      grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+  }
+  
+  @media(min-width:600px){
+      .grilla{
+          grid-template-columns: 1fr 3fr;
+          grid-template-areas: 
+          "header header"
+          "main main"
+          "footer footer";
+      }
+  
+      header{
+          font-size: large;
+          display: grid;
+          justify-content: center;
+          background-image: linear-gradient(50deg, rgb(108, 160, 119), rgba(3, 56, 32, 0.995));
+          border: 3px solid black;
+      }
+  
+      footer{
+          text-align: center;
+          padding: 20px;
+          background-color: rgb(206, 105, 105);
+          margin-bottom: 0;
+          margin-top: auto;
+          border: 3px solid black;
+      }
+  
+  }
+  */
+  /* BEBIDAS MOBILE */
+  /*
+  .header2{
+      grid-area: header2;
+  }
+  
+  .medio2{
+      grid-area: main2;
+  }
+  
+  .footer2{
+      grid-area: footer2;
+  }
+  
+  .fotosbebidas2{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      height: 3500px;
+      justify-content: end;
+      align-items: end;
+      gap: 100px;
+      
+  }
+  
+  .grilla2{
+      display: grid;
+      gap: 20px;
+      grid-template-areas: 
+      "header2"
+      "main2"
+      "footer2";
+  }
+  
+  @media(min-width:950px){
+  
+      .fotosbebidas2{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          height: auto;
+          justify-content: end;
+          align-items: end;
+          gap: 100px;
+          
+      }
+  
+      .grilla2{
+          display: grid;
+          grid-template-columns: 1fr 4fr 1fr;
+          grid-template-areas:
+          "header2 header2 header2 "
+          "main2 main2 main2 "
+          "footer2 footer2 footer2 "
+          ;
+      }
+  
+  }
+  */
+
+  
+  .color-nav {
+    background-color: aqua;
+  }
+  
+  main {
+    background-color: blanchedalmond;
+    min-height: 100vh;
+  }
+  
+  .img-index {
+    margin-left: 10px;
+    margin-top: 15px;
+    border: 3px solid black;
+    width: 350px;
+    height: 400px;
+  }
+  
+  footer {
+    text-align: center;
+    background-image: linear-gradient(50deg, #6ca077, rgba(3, 56, 32, 0.995));
+    height: 5cm;
+  }
+  
+  .medio2 {
+    height: 105%;
+  }
+  
+  .header2 {
+    grid-area: header2;
+  }
+  
+  .medio2 {
+    grid-area: main2;
+  }
+  
+  .footer2 {
+    grid-area: footer2;
+  }
+  
+  .fotosbebidas2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    height: 3500px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    gap: 50px;
+  }
+  
+  @media (min-width: 950px) {
+    .fotosbebidas2 {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+      height: auto;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: end;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: end;
+      gap: 100px;
+    }
+    .grilla2 {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 4fr 1fr;
+          grid-template-columns: 1fr 4fr 1fr;
+          grid-template-areas: "header2 header2 header2 "
+   "main2 main2 main2 "
+   "footer2 footer2 footer2 ";
+    }
+  }
+  
+  .medio {
+    grid-area: main;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+  
+  .fotos2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    height: 2100px;
+    gap: 10px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ce6969;
+    margin-bottom: 0;
+    margin-top: auto;
+    border: 3px solid black;
+  }
