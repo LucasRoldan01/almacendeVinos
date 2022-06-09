@@ -336,7 +336,7 @@
   }
   
   main {
-    background-color: blanchedalmond;
+    background-color: rgb(175, 168, 158);
     min-height: 100vh;
   }
   
@@ -442,4 +442,42 @@
     margin-bottom: 0;
     margin-top: auto;
     border: 3px solid black;
+  }
+
+
+  /* Mapas */
+
+  .Bwhatsapp{
+    background-image: linear-gradient(50deg, #6ca077, rgba(3, 56, 32, 0.995));
+  }
+
+  .Binstagram{
+      background-color: antiquewhite;
+  }
+
+  .Bfacebook{
+      background-color: rgb(52, 79, 130);
+  }
+
+  /*Extend*/
+  .botones-redes{
+      @extend.Bwhatsapp;
+      border: 1px solid black;
+
+  }
+
+  /*Mixin*/
+  
+  @mixin color ($width, $height) {
+      height: $height;
+      width: $width;
+      
+      
+  }
+
+  .mixin2{
+      @include color (300px, 40px);
+      text-align: center;
+      background-color: #54a571;
+      
   }
