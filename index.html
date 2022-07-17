@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/stylesass.css">
+    <script src="https://kit.fontawesome.com/fa579113ed.js" crossorigin="anonymous"></script>
     <meta name="description" content="En Almacen de vinos podemos encontrar vinos espumantes cervezas y champagnes">
     <meta name="keywords" content="Almacen de vinos, Almacen, Vinos, Comprar vinos, Espumante, Cerveza, champagne, Alcohol, Bebidas alcoholicas">
     <title>AlmacenDeVinos</title>
@@ -16,7 +17,7 @@
             <nav class="navbar navbar-expand-lg navbar-light color-nav">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">
-                    <img src="./imagenes/logo2.png"class="w-25" alt="logo">
+                    <img src="./imagenes/adv.png"class="w-25" alt="logo">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,9 +29,6 @@
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="./secciones/bebidas.html">Bebidas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./secciones/servicios.html">Servicios</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="./secciones/ubicacion.html">Ubicacion</a>
@@ -46,46 +44,86 @@
                   </div>
                 </div>
               </nav>
-            </nav>
+            </div>
         </header>
     
 
 
 
 <main class="medio">
-<section class="fotos">
+<section id="hero">
 
-    <h1 id="subtitulo">Nuestras Bebidas</h1>
+    <h1 id="subtitulo">Almacen de Vinos</h1>
     <p class="display-6">En esta pagina vas a encontrar variedad de bebidas alcoholicas</p>
     
     <section class="fotos2">
-        
+      <div class="bebidas-index">
         <figure>
-            <img src="./imagenes/trumpeter.jpg"class="img-index" alt="trumpeter malbec">
-            <figcaption>Rojo violáceo brillante, seduce con sus aromas frutales. Posee gran cuerpo</figcaption>
-
+          <img id="img-center" src="./imagenes/todaslasbebidas.png" class="todaslasbb" alt="foto de las bebidas">
         </figure>
+        <div class="titulo-grande">
+          <h2>Lo que buscas lo tenemos</h2>
+          <p>Tenemos lo que buscas. Vinos, espumantes y otras bebidas para tus fiestas!! Busca todo lo que te gusta</p>
+        </div>
 
-        <figure>
-            <img src="./imagenes/baron b.jpg"class="img-index" alt="espumante baron b">
-            <figcaption>Baron B Nature tiene el mismo assemnlage pero se percibe al mismo tiempo fresco y untuoso, y el prolongado contacto con levaduras le otorga una vibrante textura cremosa</figcaption>
-
-        </figure>
-
-        <figure>
-            <img src="./imagenes/corona.jpg"class="img-index" alt="cerveza corona">
-            <figcaption>La cerveza corona es una de las mejores cervezas del mundo no sólo por su sabor inconfundible y por ser una de las más refrescantes, sino porque encabeza el podio al ser la cerveza mexicana más vendida globalmente</figcaption>
-
-        </figure>
-
-        <figure>
-            <img src="./imagenes/bombay.jpg"class="img-index" alt="gin bombay">
-            <figcaption>Bombay Sapphire es de gran calidad gracias a su equilibrio perfecto. El exclusivo diseño de su botella y su distintivo color azul zafiro son simplemente inconfundibles</figcaption>
-        </figure>
-
-
+      </div>
 
     </section>
+</section>
+
+<section class="contenedor1">
+  <div class="tiposbebidas">
+    <div>
+      <h3 class="letrag">VINOS</h3>
+      <h4 class="letrap">TINTO</h4>
+      <h4 class="letrap">BLANCO</h4>
+      <h4 class="letrap">MALBEC</h4>
+      <h4 class="letrap">CHARDONNAY</h4>
+      <form action="./secciones/bebidas.html" method="get">
+        <button>Comprar</button>
+      </form>
+    </div>
+    <div>
+      <h3 class="letrag">CHAMPAGNES</h3>
+      <h4 class="letrap">ESPUMANTES</h4>
+      <h4 class="letrap">ROSE</h4>
+      <h4 class="letrap">EXTRA BRUT</h4>
+      <h4 class="letrap">RESERVE</h4>
+      <form action="./secciones/bebidas.html" method="get">
+        <button>Comprar</button>
+      </form>
+    </div>
+    <div>
+      <h3 class="letrag">CERVEZAS</h3>
+      <h4 class="letrap">IPA</h4>
+      <h4 class="letrap">CORONA</h4>
+      <h4 class="letrap">STELLA</h4>
+      <h4 class="letrap">MILLER</h4>
+      <form action="./secciones/bebidas.html" method="get">
+        <button>Comprar</button>
+      </form>
+    </div>
+    <div>
+      <h3 class="letrag">DESTILADOS</h3>
+      <h4 class="letrap">LICORES</h4>
+      <h4 class="letrap">WHISKY</h4>
+      <h4 class="letrap">VODKA</h4>
+      <h4 class="letrap">RON</h4>
+      <form action="./secciones/bebidas.html" method="get">
+        <button>Comprar</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="tomandovino">
+    <img src="./imagenes/tomandovino.jpeg" class="fotogente" alt="">
+    <div>
+      <h2 class="tittle">Tenemos delivery para que no te muevas de tu casa. Tambien podes pasar por nuestro deposito</h2>
+    </div>
+  </div>
 </section>
 
 
@@ -95,17 +133,30 @@
 
 
 
- <footer class="footer">
-  <div class="mixin2">
-<h2>CONTACTANOS VIA:</h2>
-</div>
-<div class="botones-redes">
-  <div><input type="button"value="Whatsapp"class="Bwhatsapp" > </div>
-  <div><input type="button"value="Instagram"class="Binstagram" > </div>
-  <div><input type="button"value="Facebook"class="Bfacebook" > </div>
+<footer class="footer">
+  <div class="g1">
+    <div class="box">
+      <h2>Contactos:</h2>
+    </div>
+    <div class="box">
+      <div class="redes">
+        <a href="https://www.facebook.com/lukkyroldan/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/lukkyroldan/" class="fa fa-instagram"></a>
+        <a href="https://outlook.live.com/mail/0/" class="fa fa-envelope"></a>
+      </div>
+      <div class="pagos">
+        <h2>Formas de Pago:</h2>
+        <a href="" class="fa fa-credit-card"></a>
+        <a href="" class="fa fa-dollar-sign"></a>
+        <a href="" class="fa fa-qrcode"></a>
+      </div>
+    </div>
+  </div>
+  <div class="derechos">
+    <small>&copy;2022 <b>Almacen de Vinos</b> - Todos los Derechos Reservados.</small>
+  </div>
+  
  </footer>
-</div>
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

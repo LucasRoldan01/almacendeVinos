@@ -1,26 +1,5 @@
-.caja {
-  border-radius: 10px;
-  width: 230px;
-  height: 25px;
-  margin: 40px auto;
-}
-
-.caja1 {
-  background-color: #813339;
+.mapa {
   border: 1px solid black;
-  text-align: center;
-}
-
-.caja:hover {
-  -webkit-transform: scale(4);
-          transform: scale(4);
-}
-
-.caja1 {
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 
 * {
@@ -28,78 +7,12 @@
   margin: 0;
 }
 
+body {
+  margin: 0;
+}
+
 /*
-  main{
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-  }
-  
-  header{
-      background-color: rgb(162, 211, 211);
-      font-size: large;
-      height: 2.5cm;
-      border: 3px solid black;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      color: black;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
-  }
-  
-  ul li{
-      list-style-type: none;
-      display: inline-block;
-      padding: 35px;
-  
-  }
-  
-  nav ul li a{
-      text-decoration: none;
-      color: black;
-     
-  }
-  
-  #subtitulo{
-      color: blue;
-  }
-  
-  main{
-      background-color: rgb(220, 202, 181);
-      border: 3px solid black;
-      
-  }
-  
-  img{
-      margin-left: 10px;
-      margin-top: 15px;
-      border: 3px solid black;
-      width: 350px;
-      height: 400px;
-  }
-  figcaption{
-      color: black;
-      margin-left: 10px;
-  }
-  
-  section{
-      background-color: rgb(220, 202, 181);
-  }
-  
-  article{
-      height: 100vh;
-  }
-  
-  #servicios{
-      height: 100vh;
-  }
-  
-  #fotos{
-      display: flex;
-      flex-wrap: wrap;
-  }
-  
+
   footer{
       background-color: rgb(162, 211, 211);
       border: 3px solid black;
@@ -352,21 +265,26 @@
   
   }
   */
-.color-nav {
+button {
+  font-size: 1.50em;
+  font-weight: bold;
+  padding: 1px 3px;
+  border-radius: 5px;
+  color: white;
   background-color: aqua;
 }
 
-main {
-  background-color: #afa89e;
-  min-height: 100vh;
+button:hover {
+  background-color: #146464;
 }
 
-.img-index {
-  margin-left: 10px;
-  margin-top: 15px;
-  border: 3px solid black;
-  width: 350px;
-  height: 400px;
+.color-nav {
+  background-color: #72c0c0;
+}
+
+main {
+  background-color: #d2d1d1;
+  min-height: 100vh;
 }
 
 footer {
@@ -375,117 +293,235 @@ footer {
   height: 5cm;
 }
 
-.medio2 {
-  height: 105%;
-}
-
-.header2 {
-  grid-area: header2;
-}
-
-.medio2 {
-  grid-area: main2;
-}
-
-.footer2 {
-  grid-area: footer2;
-}
-
-.fotosbebidas2 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
-  height: 3500px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: end;
-  gap: 50px;
-}
-
-@media (min-width: 950px) {
-  .fotosbebidas2 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    height: auto;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: end;
-    gap: 100px;
-  }
-  .grilla2 {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 4fr 1fr;
-    grid-template-columns: 1fr 4fr 1fr;
-        grid-template-areas: "header2 header2 header2 " "main2 main2 main2 " "footer2 footer2 footer2 ";
-  }
-}
-
-.medio {
-  grid-area: main;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.fotos2 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
-  height: 2100px;
-  gap: 10px;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: end;
-}
-
 footer {
   text-align: center;
   padding: 20px;
   background-color: #ce6969;
   margin-bottom: 0;
   margin-top: auto;
-  border: 3px solid black;
 }
 
-/* Mapas */
-.Bwhatsapp, .botones-redes {
-  background-image: linear-gradient(50deg, #6ca077, rgba(3, 56, 32, 0.995));
+.todaslasbb {
+  margin-left: 10px;
+  margin-top: 15px;
+  width: 700px;
+  height: 500px;
 }
 
-.Binstagram {
-  background-color: antiquewhite;
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.Bfacebook {
-  background-color: #344f82;
+.fotocompra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25px;
+  margin: 5px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  background: #d2d1d1;
 }
 
-/*Extend*/
-.botones-redes {
-  border: 1px solid black;
+.fotocompra:hover {
+  -webkit-box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.4);
 }
 
-/*Mixin*/
-.mixin2 {
-  height: 40px;
-  width: 300px;
+.letra {
+  font-size: 0.70em;
+}
+
+.titulo-grande {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 100;
+  font-size: 1.50em;
+}
+
+.bebidas-index {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+.tiposbebidas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   text-align: center;
-  background-color: #54a571;
+  margin: 30px;
+}
+
+.tomandovino {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fotogente {
+  width: 700px;
+  height: 500px;
+}
+
+.tittle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 100;
+  font-size: 2em;
+  padding: 50px;
+}
+
+.letrag {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+
+.letrap {
+  font-weight: 100;
+}
+
+@media (max-width: 1275px) {
+  .contenedor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+}
+
+@media (max-width: 626px) {
+  .contenedor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+}
+
+@media (max-width: 916px) {
+  .tomandovino {
+    display: -ms-grid;
+    display: grid;
+  }
+  .tiposbebidas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1.50fr 1fr;
+        grid-template-rows: 1.50fr 1fr;
+    text-align: center;
+    margin: 30px;
+  }
+  .todaslasbb {
+    margin-left: 0px;
+    margin-top: 15px;
+    width: 400px;
+    height: 300px;
+  }
+  .fotogente {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 662px) {
+  .bebidas-index {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .fotogente {
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .todaslasbb {
+    margin-left: 0px;
+    margin-top: 15px;
+    width: 300px;
+    height: 300px;
+  }
+  .tiposbebidas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1.50fr 1fr;
+        grid-template-rows: 1.50fr 1fr;
+    text-align: center;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 340px) {
+  .todaslasbb {
+    margin-left: 0px;
+    margin-top: 15px;
+    width: 200px;
+    height: 200px;
+  }
+  .letrag {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 311px) {
+  .fotocompra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1px;
+  }
 }
 /*# sourceMappingURL=stylesass.css.map */
